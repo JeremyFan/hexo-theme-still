@@ -4,7 +4,7 @@
   "description": "A hexo theme inspired by FarBox",
   "main": "index.js",
   "scripts": {
-    "dev": "stylus -w source/stylus/index.styl -m -o source/css/style.css",
+    "dev": "stylus source/stylus/index.styl -w -m -o source/css/style.css",
     "build": "stylus source/stylus/index.styl -c -o source/css/style.css"
   },
   "keywords": [
