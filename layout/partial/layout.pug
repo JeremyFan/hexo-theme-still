@@ -1,0 +1,14 @@
+doctype
+html(lang=config.language)
+    head
+        include head.pug
+    body
+        .wrap
+            header
+                h1.title=theme.title
+                include nav.pug
+            main.container
+                block container
+            footer
+                block pagination
+                block copyright

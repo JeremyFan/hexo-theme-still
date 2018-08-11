@@ -1,0 +1,14 @@
+doctype
+html(lang=config.language)
+    head
+        include partial/head.pug
+    body
+        .wrap
+            header
+                a.logo-link(href=url_for())
+                    img(src=url_for(theme.logo) alt="logo")
+                include partial/nav.pug
+            main.container
+              p Hi, I'm Jeremy
+            footer
+                block copyright

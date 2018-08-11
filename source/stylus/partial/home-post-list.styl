@@ -1,0 +1,18 @@
+@import "../constants"
+
+.home.post-list
+    margin 2em 0
+    .post-list-item
+        padding 2em 0 3em
+        border-bottom 1px solid split-line-color
+        &:last-child
+            border-bottom 0px
+    .post-content
+        h2, h3, h4, h5, h6
+            &:before
+                content ''
+        & > ul
+            list-style initial
+    .read-more
+        color text-color
+        text-decoration underline

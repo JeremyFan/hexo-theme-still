@@ -1,0 +1,17 @@
+{
+  "name": "hexo-theme-still",
+  "version": "0.0.1",
+  "description": "A hexo theme inspired by FarBox",
+  "main": "index.js",
+  "scripts": {
+    "dev": "stylus -w source/stylus/index.styl -m -o source/css/style.css",
+    "build": "stylus source/stylus/index.styl -c -o source/css/style.css"
+  },
+  "keywords": [
+    "hexo",
+    "theme",
+    "css"
+  ],
+  "author": "jeremyfan <jeremyfan_14@live.com>",
+  "license": "ISC"
+}

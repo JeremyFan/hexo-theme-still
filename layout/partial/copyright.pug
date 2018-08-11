@@ -1,0 +1,10 @@
+.copyright
+	- var authorURL = "https://github.com/jeremyfan";
+	- var hexoURL = "https://hexo.io/";
+	- var artemisURL = "https://github.com/jeremyfan/hexo-theme-artemis";
+	- var currentDate = new Date();
+	- var year = currentDate.getFullYear();
+	- year = year == theme.startyear ? year : theme.startyear + ' - ' + year;
+
+	p © #{year} PEACE & LOVE
+	p Powered by #[a(href=hexoURL, target="_blank") Hexo], #[a(href=artemisURL, target="_blank") theme] by #[a(href=authorURL, target="_blank")!=config.author].
