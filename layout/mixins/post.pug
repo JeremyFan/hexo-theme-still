@@ -2,7 +2,7 @@ mixin postInfo(item)
     .post-info
         != full_date(item.date, 'll')
         if item.from && (is_home() || is_post())
-            a.post-from(href=item.from target="_blank" title=item.from) [翻译 · 原文地址]
+            a.post-from(href=item.from target="_blank" title=item.from) [翻译 · 查看原文]
 
 //- Index Page
 mixin posts()
@@ -32,8 +32,12 @@ mixin postList()
                 h2.archive-year!= year
             .post-item
                 +postInfo(item)
-                a.post-title-link(href= url_for(item.path))
-                    != item.title
+                div.post-title
+                    if item.from && is_archive()
+                        a.post-from(href=item.from target="_blank" title=item.from) [翻译 · 查看原文]
+                    a.post-title-link(href= url_for(item.path)) 
+                        != item.title
+
         - })
 
 //- Post Page
