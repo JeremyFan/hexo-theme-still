@@ -51,3 +51,17 @@ To:
 ```
 
 3. Restart/Re-render your hexo.
+
+### Enable mermeaid
+
+In your hexe's `_config.yml` file, add config for mermaid as blow:
+
+```
+mermaid: ## mermaid url https://github.com/knsv/mermaid
+  enable: true  # default true
+  version: "7.1.2" # default v7.1.2
+  options:  # find more api options from https://github.com/knsv/mermaid/blob/master/src/mermaidAPI.js
+    startOnload: true  # default true
+```
+
+(Please make sure that you have the latest hexo-theme-still update.)
