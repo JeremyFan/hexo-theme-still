@@ -18,8 +18,6 @@ try to install pug renderer:
 npm install hexo-render-pug --save
 ```
 
----
-
 ## Activate Google Analytics:
 
 1. Edit and apply your Google Analytics code in layout/mixins/ga.pug.pug
