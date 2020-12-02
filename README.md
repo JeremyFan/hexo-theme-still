@@ -4,12 +4,17 @@ Still is a minimal, pure colored theme inspired by farbox and hexo-theme-apollo.
 
 ![preview](https://raw.githubusercontent.com/JeremyFan/static/images/still.png)
 
-## Install pug renderer
-If you got an error page when run `hexo server`:
+## Get Started
+Clone to hexo `themes/`, and install dependences:
 ```
-extends partial/layout.pug block container include mixins/post.pug +postList() block pagination include mixins/paginator.pug +home() block copyright include partial/copyright.pug
+cd hexo/themes
+
+git clone git@github.com:JeremyFan/hexo-theme-still.git
+
+cd hexo-theme-still && npm install
 ```
-try to install pug renderer:
+
+use theme in `_config.yml`:
 ```
-npm install hexo-render-pug --save
+theme: still
 ```
