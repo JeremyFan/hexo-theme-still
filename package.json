@@ -13,8 +13,5 @@
     "css"
   ],
   "author": "jeremyfan <jeremyfan_14@live.com>",
-  "license": "ISC",
-  "dependencies": {
-    "hexo-render-pug": "^2.1.4"
-  }
+  "license": "ISC"
 }
