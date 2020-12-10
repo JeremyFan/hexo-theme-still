@@ -1,5 +1,5 @@
 ul.nav.nav-list
-    - var current_url = _.isUndefined(page.current_url) ? page.path.match(/(.+)\//)[0] : page.current_url
+    - var current_url = page.current_url || (page.path.match(/(.+)\//) ? page.path.match(/(.+)\//)[0]: '')
     each value, key in theme.menu
         li.nav-list-item
             - var re = /^(http|https):\/\/*/gi;
